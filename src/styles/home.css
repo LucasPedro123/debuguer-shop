@@ -1,0 +1,140 @@
+body{
+    background-color: var(--gray);
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 38px 45px 98px;
+}
+.menu-title{
+    /* cardápio */
+
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 73px;
+    text-transform: uppercase;
+    text-align:center;
+    color: var(--black);
+    font-family: 'Insaniburger with Cheese', sans-serif;
+}
+.menu-subtitle{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+    font-family: 'Bebas Neue';
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: var(--gray2);
+}
+.menu-subtitle span{
+    font-weight: 700;
+}
+.card{
+    text-transform: uppercase;
+    background: rgba(61, 60, 60, 0.638);
+    border-radius: 60px;
+    background-size: cover;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 0px;
+}
+.menu-cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 900px));
+    gap: 48px 30px ;
+}
+
+.card-title{
+    /* Título Hambúrguer */
+
+    font-family: 'Insaniburger with Cheese';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 51px;
+
+    /* Laranja - Deburguer */
+
+    color: var(--primary);
+}
+
+.card-title, .card-price{
+    font-family: 'Insaniburger with Cheese', sans-serif;
+
+} 
+.card:nth-last-child(4){
+    background-image: url('../Imgs/original.svg');
+}
+.card:nth-last-child(3){
+    background-image: url('../Imgs/cheese-classic.svg');
+}
+.card:nth-last-child(2){
+    background-image: url('../Imgs/bbq-bacon-burguer.svg');
+}
+.card:nth-last-child(1){
+    background-image: url('../Imgs/bacon-beef.svg');
+}
+.ingredients, .card-title, .card-price{
+   margin-left: auto; 
+   margin-right: 53px;
+   text-align: right;
+   width: fit-content;
+}
+.ingredients{
+    color: var(--white);
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    margin-top: 8px;
+}
+.card-price{
+    background-color: var(--primary);
+    color: var(--white);
+    width: 184px; height: 56px;
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 16px;
+    margin-top: 28px;
+}
+
+@media(max-width:1023px){
+    .card{
+        padding: 20px;
+    }
+    .menu-title{
+        font-size: 3em;
+    }
+    .menu-subtitle{
+        font-size: 2em;
+    }
+
+    .menu-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-title{
+        font-size: 1.7em;
+        line-height: 24px;
+    }
+    .ingredients, .card-price, .card-title{
+        margin-right: 10px;
+    }
+    .ingredients{
+        font-size: 1.3em;
+    }
+
+    .card-price{
+        font-size: 1.7em;
+        width: 130px; height: 56px;
+    }
+}
