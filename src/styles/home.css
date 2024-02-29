@@ -145,6 +145,122 @@ body{
 
 
     }
+
+    .location{
+        background-color: var(--gray2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 0px 120px;
+    }
+    .location-texts-content{
+        padding-bottom: 41px;
+    }
+    .location-title, .location-subtitle, .description-address{
+        text-transform: uppercase;
+    }
+    .location-title{
+        font-family: 'Insaniburger with Cheese';
+        font-weight: 400;
+        font-size: 60px;
+        text-align: center;
+
+        /* Branco */
+        color: var(--white);
+    }
+    .location-subtitle{
+        font-family: 'Bebas Neue';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 54px;
+        text-align: center;
+
+        /* Branco */
+        color: var(--white);
+    }
+    .description-address{
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        padding-top: 25px;
+        /* Branco */
+        color: #FFFFFF;
+    }
+
+    .location-address{
+        width: 990px;
+        height: 700px;
+        border-radius: 80px;
+    }
+
+    footer{
+        background-color: var(--gray2);
+    }
+    
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .footer-title{
+        font-family: 'Insaniburger with Cheese';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 68px;
+
+        color: var(--white);
+
+
+    }
+
+    .footer-title span{
+        color: var(--primary);
+    }
+    .footer-subtitle{
+        font-family: 'Bebas Neue';
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 42px;
+
+        color: var(--white);
+    }
+    .footer-btn{
+        /* Botão */
+        background-color: var(--primary);
+        width: 562.96px;
+        height: 80px;
+        left: 1110px;
+        border-radius: 80px;
+    }
+
+    .content-btn p{ 
+        font-family: 'Insaniburger with Cheese';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 100%;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--white);
+
+        text-shadow: 1px 1px 1px var(--black);
+
+    }
+    .footer-texts{
+        padding-bottom: 56px;
+        padding-left: 210px;
+    }
+    .content-btn{
+        padding-bottom: 74px;
+        padding-right: 245px;
+    }
 @media(max-width:1023px){
     .card{
         padding: 20px;
@@ -185,9 +301,40 @@ body{
     .menu-drinks{
         padding: 10px;
     }
+
+
+    .location-title{
+        font-size: 35px;
+    }
+    .location-subtitle{
+        font-size: 25px;
+    }
+    .description-address{
+        font-size: 20px;
+    }
+    .location-address{
+        width: 90vw;
+        height: 60vh;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-texts{
+        margin-right: 50%;
+    }
+    .content-btn{
+        padding: 0px;
+        margin-bottom: 10%;
+    }
+    .footer-btn{
+
+        width: 300px;
+        height: 100%;
+    }
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
     .drink-title{
         font-size: 1.7em;
     }
