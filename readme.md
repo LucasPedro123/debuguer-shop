@@ -1,8 +1,7 @@
 # Deburguer
 
 Bem-vindo ao site do Deburguer, e veja a delícia dos hambúrgueres com um layout agradável.
-
-<img src="src/Imgs/Deburguer-shop.png" alt="React Logo" width="60%">ㅤ
+<a href="https://www.figma.com/file/VILYmJXwQYNv0ou9IYwxtr/Deburguer?type=design&mode=design&t=wv1FWiotYYPclGeB-0"><img src="src/Imgs/Deburguer-shop.png" alt="React Logo" width="60%">ㅤ</a>
 ㅤ
 ## Demo
 
@@ -22,7 +21,7 @@ O Deburguer é um site desenvolvido para apresentar uma seleção de hambúrguer
 1. Clone o repositório:
 
     ```bash
-    git clone https://github.com/seuusuario/seurepositorio
+    git clone https://github.com/LucasPedro123/hambuguer-shop
     ```
 
 2. Após clonar o projeto, abra no seu dispositivo local e copie o caminho do arquivo HTML.
