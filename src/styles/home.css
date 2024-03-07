@@ -216,14 +216,13 @@ body{
     font-family: 'Insaniburger with Cheese';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 28px;
     line-height: 51px;
 
     /* Laranja - Deburguer */
 
     color: var(--primary);
 }
-
 .card-title, .card-price{
     font-family: 'Insaniburger with Cheese', sans-serif;
 
@@ -249,7 +248,7 @@ body{
 .ingredients{
     color: var(--white);
     font-family: 'Bebas Neue';
-    font-size: 1.2em;
+    font-size: 18px;
     margin-top: 8px;
 }
 .card-price{
