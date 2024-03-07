@@ -8,6 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>        
     <link rel="icon" href="src/Imgs/logo.svg">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/home.css">
     <link rel="stylesheet" href="src/styles/global.css">
@@ -15,9 +18,9 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="src/Imgs/logo.svg" alt="">
+        <img class="logo" src="src/Imgs/logo.svg" alt="" data-aos="fade-down">
 
-        <h2 class="header-title">
+        <h2 class="header-title" data-aos="fade-down">
             o melhor da <span>cidade</span>
         </h2>
 
@@ -26,39 +29,39 @@
                 <li class="nav-item"> <a href="">cardápio</a> </li>
                 <li class="nav-item"> <a href="">bebidas</a> </li>
                 <li class="nav-item"> <a href="">localização</a> </li>
-                <li class="nav-item-btn"> <a href="">peça agora</a> </li>
+                <li class="nav-item-btn"> <a  href="">peça agora</a> </li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="content-main">
-            <div class="main-titles">
+        <div class="content-main" >
+            <div class="main-titles" data-aos="zoom-in">
                 <h2 class="main-title">Produtos <span>Frescos</span>,</h2>
                 <h2 class="main-title">selecionados <span>a dedo</span>!</h2>
             </div>
             
-            <div class="border-main"></div>
+            <div class="border-main"  data-aos="fade-right"></div>
             
-            <div class="main-subtitles">
+            <div class="main-subtitles" data-aos="zoom-in">
                 <p class="main-subtitle"><span>Preço bom</span> e <span>qualidade</span> pensados</p>
                 <p class="main-subtitle">especialmente para você!</p>
             </div>
             
             <div class="content-main-btn">
-                <button class="main-btn">
+                <button class="main-btn" >
                     <p>PEÇA AGORA</p>
                 </button>
             </div>
             
         </div>
-        <div class="hamburguer-main">
-            <img class="hamburguer-img" src="src/Imgs/hamburguer_photos 1.svg" alt="">
+        <div class="hamburguer-main" >
+            <img data-aos="fade-left" data-aos-delay="300" class="hamburguer-img" src="src/Imgs/hamburguer_photos 1.svg" alt="">
         </div>
     </main>
     <section class="menu">
         <div>
-            <h2 class="menu-title">cardápio</h2>
-            <p class="menu-subtitle">Nossos hambúrgueres, feitos <span>especialmente</span> para você!</p>
+            <h2 class="menu-title" data-aos="zoom-out" data-aos-delay="300">cardápio</h2>
+            <p class="menu-subtitle" data-aos="zoom-out" data-aos-delay="500">Nossos hambúrgueres, feitos <span>especialmente</span> para você!</p>
         </div>
         <div class="menu-cards">
             <div class="card">
@@ -91,7 +94,7 @@
                 </p>
             </div>
             <div class="card">
-                <p class="card-title">Original</p>
+                <p class="card-title">cheese classic</p>
                 <ul class="ingredients">
                     <li>
                         Queijo
@@ -116,11 +119,11 @@
                     </li>
                 </ul>
                 <p class="card-price">
-                    R$26,00
+                    R$22,00
                 </p>
             </div>
             <div class="card">
-                <p class="card-title">Original</p>
+                <p class="card-title">bbq bacon burguer</p>
                 <ul class="ingredients">
                     <li>
                         Queijo
@@ -145,11 +148,11 @@
                     </li>
                 </ul>
                 <p class="card-price">
-                    R$26,00
+                    R$28,00
                 </p>
             </div>
             <div class="card">
-                <p class="card-title">Original</p>
+                <p class="card-title">bacon beef</p>
                 <ul class="ingredients">
                     <li>
                         Queijo
@@ -174,15 +177,15 @@
                     </li>
                 </ul>
                 <p class="card-price">
-                    R$26,00
+                    R$24,00
                 </p>
             </div>
         </div>
-        <div>
+        <div data-aos="zoom-in-up" data-aos-delay="300">
             <h2 class="menu-title">bebidas</h2>
             <p class="menu-subtitle">Nossa seleção especial de bebidas para acompanhar nossos hambúrgueres.</p>
         </div>
-        <div class="menu-drinks">
+        <div class="menu-drinks" data-aos="zoom-in-up" data-aos-delay="500">
           
             <div class="drinks-names">
                 <p class="drink-title">bebida</p>
@@ -233,17 +236,17 @@
     </section>
 
     <section class="location">
-        <div class="location-texts-content">
+        <div class="location-texts-content"  data-aos="zoom-in-up" data-aos-delay="300">
             <h2 class="location-title">localização</h2>
             <p class="location-subtitle">veja como é fácil vir até o deburguer</p>
         </div>
         <div>
-            <iframe class="location-address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.288082194084!2d-52.338465389389306!3d-31.762627773995955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b5a373c0809b%3A0xbbfaa8360b7b5724!2sR.%20Gon%C3%A7alves%20Chaves%2C%201200%20-%20Centro%2C%20Pelotas%20-%20RS%2C%2096015-560!5e0!3m2!1spt-BR!2sbr!4v1709215668984!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe  data-aos="zoom-out" data-aos-delay="600" class="location-address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.288082194084!2d-52.338465389389306!3d-31.762627773995955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b5a373c0809b%3A0xbbfaa8360b7b5724!2sR.%20Gon%C3%A7alves%20Chaves%2C%201200%20-%20Centro%2C%20Pelotas%20-%20RS%2C%2096015-560!5e0!3m2!1spt-BR!2sbr!4v1709215668984!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
            <p class="description-address">R. Gonçalvez Chaves, n° 1200</p>
         </div>
     </section>
-    <footer>
-        <div class="footer-content">
+    <footer >
+        <div class="footer-content" >
             <div class="footer-texts">
                 <h2 class="footer-title">peça <span>agora mesmo</span>!</h2>
                 <p class="footer-subtitle">entregamos em toda cidade</p>
@@ -253,5 +256,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
